@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/test', 'TestController@index');
+
+Route::get('/testing', [TestController::class, 'index']);
+
+Route::get('/chocolate', 'ChocolateController@index');

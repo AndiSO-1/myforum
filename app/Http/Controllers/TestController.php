@@ -8,7 +8,7 @@ class TestController extends Controller
 {
     public function index()
     {
-        return 'test';
+        return view('test/test');
     }
 
     public function show($id)
